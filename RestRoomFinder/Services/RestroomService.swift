@@ -18,6 +18,6 @@ struct RestroomService {
         return restrooms
     }
     
-    private let logger: Logger
-    private let networkManager: NetworkManager
+    let logger: Logger
+    let networkManager: NetworkManager
 }

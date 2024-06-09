@@ -26,6 +26,7 @@
 		76E1C7EE2C156968006A98A5 /* RestroomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7ED2C156968006A98A5 /* RestroomService.swift */; };
 		76E1C7F12C1569EA006A98A5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F02C1569EA006A98A5 /* Logger.swift */; };
 		76E1C7F32C156C24006A98A5 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F22C156C24006A98A5 /* RestroomReducer.swift */; };
+		76E1C7F52C156D7D006A98A5 /* RestroomsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F42C156D7D006A98A5 /* RestroomsMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		76E1C7ED2C156968006A98A5 /* RestroomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomService.swift; sourceTree = "<group>"; };
 		76E1C7F02C1569EA006A98A5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		76E1C7F22C156C24006A98A5 /* RestroomReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomReducer.swift; sourceTree = "<group>"; };
+		76E1C7F42C156D7D006A98A5 /* RestroomsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomsMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		76E1C7D32C156353006A98A5 /* Middlewares */ = {
 			isa = PBXGroup;
 			children = (
+				76E1C7F42C156D7D006A98A5 /* RestroomsMiddleware.swift */,
 			);
 			path = Middlewares;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				76E1C7E02C156353006A98A5 /* Actions.swift in Sources */,
 				76E1C7E42C156353006A98A5 /* Store.swift in Sources */,
 				76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */,
+				76E1C7F52C156D7D006A98A5 /* RestroomsMiddleware.swift in Sources */,
 				76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */,
 				76E1C7EE2C156968006A98A5 /* RestroomService.swift in Sources */,
 				76E1C7F32C156C24006A98A5 /* RestroomReducer.swift in Sources */,
