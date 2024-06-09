@@ -28,9 +28,33 @@ struct HomeScreen: View {
     
     var body: some View {
         let props = map(state: store.state.restrooms)
-        VStack {
-            
+        VStack(alignment: .leading) {
+            HStack {
+                EmptyView()
+            }
+            .frame(maxWidth: .infinity, maxHeight: 44)
+            Spacer()
+            HStack {
+                Text("Restrooms")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    Spacer()
+                Button {
+                    locationManager.updateLocation()
+                } label: {
+                    Image(systemName: "arrow.clockwise.circle")
+                        .font(.title)
+                        .foregroundColor(.white)
+                }
+            }
+            .padding()
+            List(props.restrooms) { restroom in
+                RestroomListRow(restroom: restroom)
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(#colorLiteral(red: 0.880972445, green: 0.3729454875, blue: 0.2552506924, alpha: 1)))
+        .edgesIgnoringSafeArea(.all)
         .onAppear {
             self.cancellables = locationManager.$location.sink { location in
                 if let location {

@@ -12,6 +12,11 @@ func restroomsReducer(
     _ action: Action
 ) -> RestRoomState {
     var state = state
-    
+    switch action {
+    case let action as SetRestroomsAction:
+        state.restrooms = action.restrooms
+    default:
+        break
+    }
     return state
 }
