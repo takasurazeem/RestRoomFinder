@@ -17,10 +17,11 @@
 		76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7C42C156352006A98A5 /* View+Extensions.swift */; };
 		76E1C7DC2C156353006A98A5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7C82C156352006A98A5 /* HomeScreen.swift */; };
 		76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7CA2C156352006A98A5 /* Constants.swift */; };
-		76E1C7DE2C156353006A98A5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7CC2C156353006A98A5 /* Webservice.swift */; };
 		76E1C7E02C156353006A98A5 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D02C156353006A98A5 /* Actions.swift */; };
 		76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D42C156353006A98A5 /* AppReducer.swift */; };
 		76E1C7E42C156353006A98A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D72C156353006A98A5 /* Store.swift */; };
+		76E1C7E72C15671E006A98A5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7E62C15671E006A98A5 /* NetworkManager.swift */; };
+		76E1C7EA2C156792006A98A5 /* MainNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7E92C156792006A98A5 /* MainNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +55,12 @@
 		76E1C7C42C156352006A98A5 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		76E1C7C82C156352006A98A5 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		76E1C7CA2C156352006A98A5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		76E1C7CC2C156353006A98A5 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		76E1C7D02C156353006A98A5 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		76E1C7D42C156353006A98A5 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		76E1C7D72C156353006A98A5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		76E1C7E52C1565B5006A98A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		76E1C7E62C15671E006A98A5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		76E1C7E92C156792006A98A5 /* MainNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		76E1C7C72C156352006A98A5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				76E1C7E82C156722006A98A5 /* Network Manager */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -184,7 +187,6 @@
 		76E1C7CD2C156353006A98A5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				76E1C7CC2C156353006A98A5 /* Webservice.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -228,6 +230,15 @@
 				76E1C7D72C156353006A98A5 /* Store.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		76E1C7E82C156722006A98A5 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7E62C15671E006A98A5 /* NetworkManager.swift */,
+				76E1C7E92C156792006A98A5 /* MainNetworkManager.swift */,
+			);
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,12 +372,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E1C7D92C156353006A98A5 /* String+Extensions.swift in Sources */,
-				76E1C7DE2C156353006A98A5 /* Webservice.swift in Sources */,
+				76E1C7E72C15671E006A98A5 /* NetworkManager.swift in Sources */,
 				76E1C7DC2C156353006A98A5 /* HomeScreen.swift in Sources */,
 				76E1C7E02C156353006A98A5 /* Actions.swift in Sources */,
 				76E1C7E42C156353006A98A5 /* Store.swift in Sources */,
 				76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */,
 				76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */,
+				76E1C7EA2C156792006A98A5 /* MainNetworkManager.swift in Sources */,
 				76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */,
 				76E1C79A2C155EE6006A98A5 /* RestRoomFinderApp.swift in Sources */,
 			);
