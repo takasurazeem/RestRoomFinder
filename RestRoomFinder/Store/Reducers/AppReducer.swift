@@ -7,9 +7,12 @@
 
 import Foundation
 
-func appReducer(_ state: AppState, _ action: Action) -> AppState {
+func appReducer(
+    _ state: AppState,
+    _ action: Action
+) -> AppState {
     
     var state = state
-
+    state.restrooms = restroomsReducer(state.restrooms, action)
     return state
 }

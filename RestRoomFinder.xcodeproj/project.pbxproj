@@ -25,6 +25,7 @@
 		76E1C7EC2C156867006A98A5 /* Restroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7EB2C156867006A98A5 /* Restroom.swift */; };
 		76E1C7EE2C156968006A98A5 /* RestroomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7ED2C156968006A98A5 /* RestroomService.swift */; };
 		76E1C7F12C1569EA006A98A5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F02C1569EA006A98A5 /* Logger.swift */; };
+		76E1C7F32C156C24006A98A5 /* RestroomReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F22C156C24006A98A5 /* RestroomReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		76E1C7EB2C156867006A98A5 /* Restroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restroom.swift; sourceTree = "<group>"; };
 		76E1C7ED2C156968006A98A5 /* RestroomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomService.swift; sourceTree = "<group>"; };
 		76E1C7F02C1569EA006A98A5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		76E1C7F22C156C24006A98A5 /* RestroomReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				76E1C7D42C156353006A98A5 /* AppReducer.swift */,
+				76E1C7F22C156C24006A98A5 /* RestroomReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */,
 				76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */,
 				76E1C7EE2C156968006A98A5 /* RestroomService.swift in Sources */,
+				76E1C7F32C156C24006A98A5 /* RestroomReducer.swift in Sources */,
 				76E1C7F12C1569EA006A98A5 /* Logger.swift in Sources */,
 				76E1C7EA2C156792006A98A5 /* MainNetworkManager.swift in Sources */,
 				76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */,

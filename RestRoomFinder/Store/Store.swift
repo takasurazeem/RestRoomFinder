@@ -15,9 +15,12 @@ typealias Middleware<StoreState: ReduxState> = (StoreState, Action, @escaping Di
 protocol ReduxState { }
 
 struct AppState: ReduxState {
-    
+    var restrooms: RestRoomState = RestRoomState()
 }
 
+struct RestRoomState: ReduxState {
+    var restrooms: [Restroom] = []
+}
 
 class Store<StoreState: ReduxState>: ObservableObject {
     
