@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		76E1C79A2C155EE6006A98A5 /* RestRoomFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7992C155EE6006A98A5 /* RestRoomFinderApp.swift */; };
-		76E1C79C2C155EE6006A98A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C79B2C155EE6006A98A5 /* ContentView.swift */; };
 		76E1C79E2C155EE8006A98A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E1C79D2C155EE8006A98A5 /* Assets.xcassets */; };
 		76E1C7A12C155EE8006A98A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E1C7A02C155EE8006A98A5 /* Preview Assets.xcassets */; };
 		76E1C7AB2C155EE8006A98A5 /* RestRoomFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7AA2C155EE8006A98A5 /* RestRoomFinderTests.swift */; };
 		76E1C7B52C155EE8006A98A5 /* RestRoomFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7B42C155EE8006A98A5 /* RestRoomFinderUITests.swift */; };
 		76E1C7B72C155EE8006A98A5 /* RestRoomFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7B62C155EE8006A98A5 /* RestRoomFinderUITestsLaunchTests.swift */; };
+		76E1C7D92C156353006A98A5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7C32C156352006A98A5 /* String+Extensions.swift */; };
+		76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7C42C156352006A98A5 /* View+Extensions.swift */; };
+		76E1C7DC2C156353006A98A5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7C82C156352006A98A5 /* HomeScreen.swift */; };
+		76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7CA2C156352006A98A5 /* Constants.swift */; };
+		76E1C7DE2C156353006A98A5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7CC2C156353006A98A5 /* Webservice.swift */; };
+		76E1C7E02C156353006A98A5 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D02C156353006A98A5 /* Actions.swift */; };
+		76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D42C156353006A98A5 /* AppReducer.swift */; };
+		76E1C7E42C156353006A98A5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7D72C156353006A98A5 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		76E1C7962C155EE6006A98A5 /* RestRoomFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestRoomFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E1C7992C155EE6006A98A5 /* RestRoomFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRoomFinderApp.swift; sourceTree = "<group>"; };
-		76E1C79B2C155EE6006A98A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76E1C79D2C155EE8006A98A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E1C7A02C155EE8006A98A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76E1C7A62C155EE8006A98A5 /* RestRoomFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestRoomFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,15 @@
 		76E1C7B02C155EE8006A98A5 /* RestRoomFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestRoomFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E1C7B42C155EE8006A98A5 /* RestRoomFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRoomFinderUITests.swift; sourceTree = "<group>"; };
 		76E1C7B62C155EE8006A98A5 /* RestRoomFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRoomFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76E1C7C32C156352006A98A5 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		76E1C7C42C156352006A98A5 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		76E1C7C82C156352006A98A5 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		76E1C7CA2C156352006A98A5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76E1C7CC2C156353006A98A5 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		76E1C7D02C156353006A98A5 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		76E1C7D42C156353006A98A5 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		76E1C7D72C156353006A98A5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		76E1C7E52C1565B5006A98A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +109,15 @@
 		76E1C7982C155EE6006A98A5 /* RestRoomFinder */ = {
 			isa = PBXGroup;
 			children = (
+				76E1C7E52C1565B5006A98A5 /* Info.plist */,
+				76E1C7C52C156352006A98A5 /* Extensions */,
+				76E1C7C72C156352006A98A5 /* Managers */,
+				76E1C7CF2C156353006A98A5 /* Models */,
+				76E1C7CD2C156353006A98A5 /* Services */,
+				76E1C7D82C156353006A98A5 /* Store */,
+				76E1C7CB2C156352006A98A5 /* Utils */,
+				76E1C7C92C156352006A98A5 /* Views */,
 				76E1C7992C155EE6006A98A5 /* RestRoomFinderApp.swift */,
-				76E1C79B2C155EE6006A98A5 /* ContentView.swift */,
 				76E1C79D2C155EE8006A98A5 /* Assets.xcassets */,
 				76E1C79F2C155EE8006A98A5 /* Preview Content */,
 			);
@@ -125,6 +147,87 @@
 				76E1C7B62C155EE8006A98A5 /* RestRoomFinderUITestsLaunchTests.swift */,
 			);
 			path = RestRoomFinderUITests;
+			sourceTree = "<group>";
+		};
+		76E1C7C52C156352006A98A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7C32C156352006A98A5 /* String+Extensions.swift */,
+				76E1C7C42C156352006A98A5 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76E1C7C72C156352006A98A5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		76E1C7C92C156352006A98A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7C82C156352006A98A5 /* HomeScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76E1C7CB2C156352006A98A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7CA2C156352006A98A5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		76E1C7CD2C156353006A98A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7CC2C156353006A98A5 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		76E1C7CF2C156353006A98A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76E1C7D12C156353006A98A5 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7D02C156353006A98A5 /* Actions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		76E1C7D32C156353006A98A5 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		76E1C7D62C156353006A98A5 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7D42C156353006A98A5 /* AppReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		76E1C7D82C156353006A98A5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				76E1C7D12C156353006A98A5 /* Actions */,
+				76E1C7D32C156353006A98A5 /* Middlewares */,
+				76E1C7D62C156353006A98A5 /* Reducers */,
+				76E1C7D72C156353006A98A5 /* Store.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E1C79C2C155EE6006A98A5 /* ContentView.swift in Sources */,
+				76E1C7D92C156353006A98A5 /* String+Extensions.swift in Sources */,
+				76E1C7DE2C156353006A98A5 /* Webservice.swift in Sources */,
+				76E1C7DC2C156353006A98A5 /* HomeScreen.swift in Sources */,
+				76E1C7E02C156353006A98A5 /* Actions.swift in Sources */,
+				76E1C7E42C156353006A98A5 /* Store.swift in Sources */,
+				76E1C7E22C156353006A98A5 /* AppReducer.swift in Sources */,
+				76E1C7DD2C156353006A98A5 /* Constants.swift in Sources */,
+				76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */,
 				76E1C79A2C155EE6006A98A5 /* RestRoomFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +534,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RestRoomFinder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestRoomFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Restroom Finder requires access to your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Restroom Finder requires access to your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -453,9 +567,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RestRoomFinder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestRoomFinder/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Restroom Finder requires access to your location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Restroom Finder requires access to your location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
