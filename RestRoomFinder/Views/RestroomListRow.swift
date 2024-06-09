@@ -22,7 +22,16 @@ struct RestroomListRow: View {
                 .font(.subheadline)
                 .opacity(0.5)
             Button("Directions") {
-                
+                guard let targetURL = URL(string: "https://maps.apple.com/?address=\(restroom.addess.encodeURL() ?? "")") else {
+                    ConsoleLogger().log("https://maps.apple.com/?address=\(restroom.addess.encodeURL() ?? "")")
+                    return
+                }
+                ConsoleLogger().log(targetURL.absoluteString)
+                if UIApplication.shared.canOpenURL(targetURL) {
+                    UIApplication.shared.open(targetURL)
+                } else {
+                    ConsoleLogger().log("Could not open URL")
+                }
             }
             .font(.caption)
             .foregroundColor(.white)

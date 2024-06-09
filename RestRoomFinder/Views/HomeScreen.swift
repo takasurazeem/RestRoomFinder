@@ -51,6 +51,7 @@ struct HomeScreen: View {
             List(props.restrooms) { restroom in
                 RestroomListRow(restroom: restroom)
             }
+            .buttonStyle(PlainButtonStyle())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(#colorLiteral(red: 0.880972445, green: 0.3729454875, blue: 0.2552506924, alpha: 1)))
