@@ -29,6 +29,7 @@
 		76E1C7F52C156D7D006A98A5 /* RestroomsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F42C156D7D006A98A5 /* RestroomsMiddleware.swift */; };
 		76E1C7F82C156F9A006A98A5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7F72C156F9A006A98A5 /* LocationManager.swift */; };
 		76E1C7FE2C157630006A98A5 /* RestroomListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7FD2C157630006A98A5 /* RestroomListRow.swift */; };
+		76E1C8002C1694E2006A98A5 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1C7FF2C1694E2006A98A5 /* ConsoleLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		76E1C7F42C156D7D006A98A5 /* RestroomsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomsMiddleware.swift; sourceTree = "<group>"; };
 		76E1C7F72C156F9A006A98A5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		76E1C7FD2C157630006A98A5 /* RestroomListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroomListRow.swift; sourceTree = "<group>"; };
+		76E1C7FF2C1694E2006A98A5 /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				76E1C7F02C1569EA006A98A5 /* Logger.swift */,
+				76E1C7FF2C1694E2006A98A5 /* ConsoleLogger.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				76E1C7F32C156C24006A98A5 /* RestroomReducer.swift in Sources */,
 				76E1C7F12C1569EA006A98A5 /* Logger.swift in Sources */,
 				76E1C7EA2C156792006A98A5 /* MainNetworkManager.swift in Sources */,
+				76E1C8002C1694E2006A98A5 /* ConsoleLogger.swift in Sources */,
 				76E1C7DA2C156353006A98A5 /* View+Extensions.swift in Sources */,
 				76E1C79A2C155EE6006A98A5 /* RestRoomFinderApp.swift in Sources */,
 			);

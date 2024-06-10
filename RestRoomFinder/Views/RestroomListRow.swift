@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RestroomListRow: View {
     let restroom: Restroom
+    // Should have been injected, infact, should be in the viewModel?
+    let logger = ConsoleLogger(category: "URL")
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
@@ -23,14 +25,14 @@ struct RestroomListRow: View {
                 .opacity(0.5)
             Button("Directions") {
                 guard let targetURL = URL(string: "https://maps.apple.com/?address=\(restroom.addess.encodeURL() ?? "")") else {
-                    ConsoleLogger().log("https://maps.apple.com/?address=\(restroom.addess.encodeURL() ?? "")")
+                    logger.debug("https://maps.apple.com/?address=\(restroom.addess.encodeURL() ?? "")")
                     return
                 }
-                ConsoleLogger().log(targetURL.absoluteString)
+                logger.debug(targetURL.absoluteString)
                 if UIApplication.shared.canOpenURL(targetURL) {
                     UIApplication.shared.open(targetURL)
                 } else {
-                    ConsoleLogger().log("Could not open URL")
+                    logger.error("Could not open URL")
                 }
             }
             .font(.caption)

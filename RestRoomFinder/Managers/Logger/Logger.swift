@@ -7,16 +7,9 @@
 
 import Foundation
 
-// Define the Logger protocol
-protocol Logger {
-    func log(_ message: String)
-}
-
-// Implement a ConsoleLogger that logs to the console in debug builds
-struct ConsoleLogger: Logger {
-    func log(_ message: String) {
-        #if DEBUG
-        print("[DEBUG]: \(message)")
-        #endif
-    }
+public protocol Logger {
+    func debug(_ message: String)
+    func info(_ message: String)
+    func error(_ message: String)
+    func fault(_ message: String)
 }

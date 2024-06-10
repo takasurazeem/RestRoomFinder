@@ -22,15 +22,16 @@ func restroomMiddleware() -> Middleware<AppState> {
 }
 
 private func fetchRestrooms(action: FetchRestroomsAction, dispatch: @escaping Dispatcher) {
+    let logger = ConsoleLogger(category: "restRoomMiddleware")
     Task {
         do {
             let restrooms = try await RestroomService(
-                logger: ConsoleLogger(),
+                logger: logger,
                 networkManager: MainNetworkManager()
             ).getRestRoomByLatLong(lat: action.latitude, long: action.longitude)
             dispatch(SetRestroomsAction(restrooms: restrooms ?? []))
         } catch {
-            ConsoleLogger().log(error.localizedDescription)
+            logger.error(error.localizedDescription)
         }
     }
 }
